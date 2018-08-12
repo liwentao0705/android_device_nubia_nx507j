@@ -62,7 +62,7 @@ TARGET_KRAIT_BIONIC_PLDSIZE := 64
 
 # Shutdown
 TARGET_INIT_UMOUNT_AND_FSCK_IS_UNSAFE := true
- 
+
 # Kernel
 BOARD_DTBTOOL_ARGS := --force-v2
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=23 msm_rtb.filter=0x37 ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1 androidboot.selinux=permissive
@@ -156,9 +156,9 @@ TARGET_USE_SDCLANG := true
 # CMHW
 TARGET_TAP_TO_WAKE_NODE := "/data/tp/easy_wakeup_gesture"
 BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw \
-    device/nubia/nx507j/cmhw
+BOARD_HARDWARE_CLASS +=	\
+		hardware/lineage/lineagehw \
+		$(PLATFORM_PATH)/lineagehw
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
